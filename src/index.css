@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.home {
+    position : absolute;
+    z-index : 1;
+}
+
+.content {
+    margin-top : 10vh;
+    margin-left : 33vw;
+    position : relative;
+}
+
+.lists {
+    color : white;
+}
+
+.landing {
+    z-index : 1;
+    text-allign : center;
+    margin-top : 10vh;
+    margin-left : 40vw;
+    position : absolute;
+    width : 50vw;
+    color : white;
+    font-weight : bold;
+}
+
+.view.work{
+    text-allign : center;
+    width : 15%;
+    border : solid maroon;
+    margin-left : 9vw;
+    padding : 5px;
+}
+
+.view.work:hover{
+    background-color : red;
+}
