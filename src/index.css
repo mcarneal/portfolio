@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position : relative;
+
 }
 
 code {
@@ -12,15 +14,47 @@ code {
     monospace;
 }
 
-.home {
+#root {
+    position : relative;
+    z-index : 1;
+}
+
+.video.overlay{
+    background-color : rgba(0,0,0,0.5);
+    width : 100vw;
+    height : 100vh;
+    position : fixed;
+    z-index : -1;
+}
+
+.home{
+    width : 100vw;
+    height : 100vh;
+    background-color : rgba(0,0,0,0.5);
     position : absolute;
     z-index : 1;
 }
 
+.res {
+    position : absolute !important;
+    top : 0;
+
+}
+
+
+
 .content {
+    z-index : 10 !important;
     margin-top : 10vh;
-    margin-left : 33vw;
+    margin-left : 30vw;
+    position : relative !important;
+
+}
+
+.content:hover{
+    z-index : 10;
     position : relative;
+    font-weight : bold;
 }
 
 .lists {
@@ -39,13 +73,81 @@ code {
 }
 
 .view.work{
-    text-allign : center;
-    width : 15%;
-    border : solid maroon;
-    margin-left : 9vw;
-    padding : 5px;
+    z-index : 2;
+    margin-left : 48vw;
+    margin-top : 25vh;
+    position : fixed;
+    color : maroon;
+    font-weight : bold;
 }
 
 .view.work:hover{
-    background-color : red;
+    color : white;
+    cursor : pointer;
 }
+
+.view.work:active{
+    transform : translateY(5px);
+}
+
+.nav:hover{
+    transform : translateY(2px);
+    text-decoration: underline;
+    cursor : pointer;
+}
+
+.resume{
+    position : relative;
+    top : 0;
+    overflow-y : auto ;
+    height : 100vh;
+    color : white;
+    width : 100vw;
+}
+
+.resume:after{
+   content: "";
+  display: table;
+  clear: both;
+}
+.banner{
+    margin-left : 47%;
+    text-decoration : underline;
+}
+
+.details.container{
+    height : 100vh;
+    width : 50%;
+    float : left;
+    color : white;
+}
+
+.jobs{
+    margin-left : 5vw;
+    width : 40%;
+    float : left;
+}
+
+
+.job.details:hover{
+    cursor : pointer;
+    transform : translateY(2px);
+    color : maroon;
+}
+
+.job.details:active{
+    transform : translateY(5px);
+}
+
+.apple{
+    margin-top : 10vh;
+}
+
+.bestbuy{
+    margin-top : 8vh;
+}
+
+.microcenter{
+    margin-top : 10vh;
+}
+

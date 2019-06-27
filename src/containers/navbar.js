@@ -13,14 +13,18 @@ class Navbar extends Component{
         
         return(
               <div className='content'>
-                    <h1 
-                        style={styles}>Resume</h1>
-                    <h1 
+                    <h1 className='nav' 
+                        style={styles}
+                        onClick={()=> this.props.clickHandler('resume')}
+                    >Resume</h1>
+                    <h1 className='nav'
                         style={styles}
                         onClick={this.props.clickHandler}>Projects</h1>
-                    <h1
+                    <h1 className='nav'
+                        style={styles}>Blog</h1>
+                    <h1 className='nav'
                         style={styles}>About</h1>
-                    <h1
+                    <h1 className='nav'
                         style={styles}>Contact</h1>
         </div>
         )

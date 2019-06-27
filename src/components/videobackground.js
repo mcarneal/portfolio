@@ -22,7 +22,7 @@ render() {
       zIndex: -2,
     };
     return (
-<div style={{backgroundColor: 'grey', opacity: 1, width: '100vw', height: '100vh', position: 'fixed', zIndex: -1,}}>
+            <div style={{backgroundColor: 'grey', opacity: 1, width: '100vw', height: '100vh', position: 'fixed', zIndex: -1,}}>
       <div style={style} >
         <VideoCover
           videoOptions={videoOptions}
